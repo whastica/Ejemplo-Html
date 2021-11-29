@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!--Identificacion del lenguaje de programcaion es decir html5-->
+<html lang="es"> <!--Etiqueta de entrada a la web--> 
+    <head><!--cabecera-->
+        <meta name ="description" content="Pagina de introduccion a Html5"/> <!--Descripcion pagina--> 
+        <meta name="keywords" content="html5,css3,javaScript, Diseño web" /><!--Palabras claves para el buscador aunque ya casi no se utiliza -->
+        <!--Texto que aparece en la pestaña del navegador--> 
+        <title>
+            Ejemplo 1 html5 
+        </title>
+        <link rel="stylesheet" href="mihojadeestilos.css"/><!--Etiqueta link sirve para enlazar archivos, rel inidica de que tipo de archivo se trata, href indica la ruta del archivo-->
+    </head>
+
+    <body><!--Cuerpo-->
+        <Header id="cabeceraPagina"><!--Cabecera de la pagina, selector id es el identificador con el cual introduciremos estilos con css-->
+            <h3>Ejemplo presentacion pagina web </h3> <!-- h# es el tamaño de la letra de los titulos de la pagina 1 mas alto, 6 mas bajo -->
+        </Header>
+        <nav id="navegacionPrincipal"><!--Barra de navegacion--><!--navegacion del sitio o menu principal-->
+            <ul><!--Lista desordenada-->
+                <li> Quienes somos  </li><!--Elementos de la lista-->
+                <li> Productos  </li>
+                <li> Servicios  </li>
+                <li> Contactanos  </li>
+                <li> Precios  </li>      
+            </ul>
+        </nav>
+
+        <aside id="barraLateral"> <!--Barra lateral por lo general vinculos o anuncios, contenido que esta fuera del contenido principal -->
+            <blockquote>primer elemento</blockquote><!--Blockquote citas largas aunque tambien se utiliza para citas cortas-->
+            <blockquote>Segundo elemento</blockquote>
+            <blockquote>Tercer elemento</blockquote>
+        </aside>
+
+        <section id="contenidoPrincipal"> <!--Contenido principal de la pagina y nos ayuda agrupar secciones o subsecciones del contenido -->
+            <article> <!--bloques de informacion o contenido del sitio, esta tambien puede tener header y footer para seccionar de mejor forma la informacion del bloque-->
+                <header>
+                    <hgroup> <!--Nos permite agrupar titulos y subtitulos que van juntos -->
+                        <h2>Titulo de la noticia 1</h2>
+                        <h3>Subtitulo de la noticia 1</h3>
+                    </hgroup>
+                </header>
+                <p>Noticia 1 </p>
+                <p>Lorem ipsum dolor sit amet. Aut expedita nihil qui laudantium sequi et optio doloremque ea odit enim in quibusdam doloremque sit labore 
+                    delectus? Qui quia laudantium non quis adipisci eum illo quibusdam. Qui doloremque aspernatur sit omnis reprehenderit aut magni magni ea 
+                    inventore voluptatem cum voluptas explicabo et cupiditate doloremque ex deserunt unde. Sit debitis odit aut autem nulla ea doloremque 
+                    accusantium ut consequuntur vitae nam explicabo accusantium.</p>
+                
+                <p>termina la Noticia 1 </p>
+                <footer>
+                    <p>Comentarios de usuarios </p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <hgroup>
+                        <h2>Titulo de la noticia 2</h2>
+                        <h3>Subtitulo de la noticia 2</h3>
+                    </hgroup>
+                </header>
+                <figure> <!--Utilizada para introducir archivos multimedia-->
+                    <img src= "Imagenes/Imagen_1.jpg"/> <!--Img src se utuliza par archivos desde nuestro ordenador-->
+                </figure>
+                <figcaption> <!-- Utilizada para colocar pie de foto a las imagenes -->
+                    Ciencia de la computacion 
+                </figcaption>
+                <p>Noticia 2 </p>
+                <p><cite> Pentesting con foca </cite> </p> <!--Indica al navegador que es la cita de un libro o pelicula -->
+                <p><mark> hablamos  de la Noticia 2 </mark></p><!--mark utilizada para resaltar palabras claves utilizadas por el usuario en su busqueda-->
+                <p><em>Et pariatur voluptatem sit cumque ducimus et possimus porro id facilis nihil et pariatur reprehenderit. Ea obcaecati enim vel quam maxime 
+                    nihil nulla. Quo quisquam esse qui sint consectetur sit iure quo omnis veritatis sit galisum distinctio. </em></p> <!-- em Texto en cursiva-->
+                <footer> 
+                    <p>Comentarios de usuarios </p>
+                </footer>
+            </article>
+
+            </article>
+                <header>
+                    <hgroup>
+                        <h2>Titulo de la noticia 3</h2>
+                        <h3> subtitulo de la noticia 3</h3>
+                    </hgroup>
+                    <time datetime = "2014/01/31" pubdate> Noticia publicada el dia 31/01/2014 </time> <!--Representa horas y fechas tiene atributos adicionales como datetime 
+                    referencia la hora o fecha de la publicación y pubdate informa que el atributo datetime referencia una fecha -->
+                </header>
+                <p>Noticia 3 </p>
+                <p><strong> hablamos de la noticia 3 </strong></p> <!--Strong utlizada ponmer el texto en negrita-->
+                <p>Termina la Noticia 3 </p>
+                <footer>
+                    <p>Comentarios de usuarios </p>
+                </footer>
+            </article>
+
+        </section>
+
+        <footer id="piePagina"> <!--Pie de pagina-->
+           <small> Derechos reservados </small> <!--Utilizada para representar arhivos legales como copyright-->
+           <address> Telefono 00000321 </address><!--Utilizada para informacion de contacto en el footer-->
+        </footer>
+    </body>
+
+</html>

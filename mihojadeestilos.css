@@ -1,0 +1,80 @@
+/*body {
+    background-color: gray; Cambias el color de fondo de la pagina web
+}*/
+
+#cabeceraPagina{ /*Selector id utilizado para dar estilo a una etiqueta en especifico*/
+    width: 500px ;
+    /*background-color:beige; color de fondo de la etiqueta */
+    color:black;
+    text-align: center;/*Nos permite centrar un texto*/
+    margin: 15px auto;/*sirve oara mover una caja donde 15px es la separacion tanto de arriba como de abajo y 
+    el auto es el centro de izquierda a derecha*/
+    padding:15px 30px;/*utilizado para separar el texto con el borde del contenedor */
+    border: 4px solid black;/*permite tener bordes px es el tamaño del borde, solid es el tipo de borde y red es el color del borde*/
+    border-radius: 10px;/*permite redondear los bordes de una caja*/
+    box-shadow: gray 5px 7px 5px;/*Nos permite colocar sombras en la caja*/
+    background:-webkit-radial-gradient(center, ellipse, magenta, cyan);/*Degradado a una caja*/
+    background:-moz-linear-gradient(left, darkcyan, cyan);
+    outline: 4px dashed slategrey;  /*Permite colocar un borde exterior a una caja*/
+    outline-offset: 7px;
+    /*transform: scale(0.5); nos permite agrndar o volver mas pequeña una caja o texto */
+    /*transform: rotate(45deg);nos permite rotar un elemento */
+    /*transform: skew(45deg);*/
+    transition:-webkit-transform 2s ease 0.5s;
+}
+#cabeceraPagina:hover/*permite que cuando se pase el ratón por un objeto este rote o se haga más grande o pequeño */{
+    transform: rotate(45deg); /*Rotar*/
+    /*transform: scale(0.5); Tamaño*/
+}
+#titulo{
+  font:bold 25px arial;/*Sirve para modificar el tipo de letra*/
+  text-shadow: gray 5px 6px 7px;/*Sombreado al texto*/
+  color:rgba(0,0,0,0.5);
+}
+#navegacionPrincipal{
+
+    background-color: gainsboro;
+}
+#barraLateral{
+    background-color: goldenrod;
+    float:left; /*Nos permite mover un contenedor hacia el lado que necesitemos ademas ajustara el contenedor al tamño del texto
+    por ultimo los elementos que estan a continuacion de el lo rodearan segun su tamaño y el lado  */
+    height: 1020px;/* Permite modificar la altura del contenedor */
+}
+#contenidoPrincipal{
+    background-color: lavender;
+    margin-left: 200px; /*Sirve para separar un contenedor del borde de la pagina u otro contenedor*/
+    padding-left: 15px; /*Separacion que hay del texto al borde del contenedor*/
+    padding-top: 15px;
+}
+#piePagina{
+    background-color: mediumslateblue;
+    clear: both;/*Sirve para no mezclar cajas contenedoras y separar sus bordes*/
+    margin-top: 20px;
+}
+li{
+    background-color: lightblue;
+    display:inline; /* Coloca los elementos de la lista uno junto a l otro y no en lista */
+    margin-left: 50px;
+}
+p[name="elementos"]{
+    color: aquamarine;
+}
+/*p[name^="misEstilos"] todas las etiquetas que empiecen con{
+    color:royalblue;
+}
+p[name$="Elementos"]aplicar estilo a todos los elementos que terminen con{
+    color:mediumpurple;
+}*/
+p[name*="men"]/*Todas las etiquetsa que tengan esa cadena*/{
+    color:cyan;
+}
+/* p:nth-child(2)aplicar stilo al elemento numero # de la lista{
+    color: mediumspringgreen;
+}*/
+p:nth-child(odd)/*impares*/{
+    color:royalblue;
+}
+p:nth-child(even)/*pares*/{
+    color:salmon;
+}
